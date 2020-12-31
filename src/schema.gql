@@ -1,0 +1,18 @@
+type Sublog {
+  id: String
+  createdAt: String
+  fileName: String
+  category: String
+  media: String
+  title: String
+  eyeCatchURL: String
+  tag: [String]
+  updatedAt: String
+}
+
+type Query {
+  getById(id: String): Sublog
+  getAll: [Sublog]
+  getByFileName(fileName: String): Sublog
+  getByCategory(category: String): [Sublog]
+}
