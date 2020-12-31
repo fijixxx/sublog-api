@@ -1,3 +1,4 @@
 node_modules/
 dist/
 test.sh
+!Dockerfile/dist/
