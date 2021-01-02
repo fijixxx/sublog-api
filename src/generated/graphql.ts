@@ -24,6 +24,7 @@ export type Sublog = {
   eyeCatchURL: Maybe<Scalars['String']>;
   tag: Maybe<Array<Maybe<Scalars['String']>>>;
   updatedAt: Maybe<Scalars['String']>;
+  body: Maybe<Scalars['String']>;
 };
 
 export type Query = {
@@ -152,6 +153,7 @@ export type SublogResolvers<ContextType = any, ParentType extends ResolversParen
   eyeCatchURL: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   tag: Resolver<Maybe<Array<Maybe<ResolversTypes['String']>>>, ParentType, ContextType>;
   updatedAt: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  body: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 }>;
 

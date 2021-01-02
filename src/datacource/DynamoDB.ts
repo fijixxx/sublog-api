@@ -47,6 +47,7 @@ class DynamoDB {
         eyeCatchURL:  item.eyeCatchURL || '',
         tag:  item.tag || [''],
         updatedAt:  item.updatedAt || '',
+        body: item.body || '',
       }))
 
       return data
