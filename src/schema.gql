@@ -8,6 +8,7 @@ type Sublog {
   eyeCatchURL: String
   tag: [String]
   updatedAt: String
+  body: String
 }
 
 type Query {
